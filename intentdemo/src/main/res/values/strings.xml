@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IntentDemo</string>
+    <string name="btncal_name">计算</string>
+    <string name="txtCal_result_label">结果:</string>
+    <string name="param1">第一个参数:</string>
+    <string name="param2">第二个参数:</string>
+    <string name="btnClose">关闭</string>
+</resources>

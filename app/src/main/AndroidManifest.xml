@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feicuiedu.feicui_android">
+
+    <uses-permission-sdk-23 android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+       <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="com.second" />
+                <action android:name="com.second1" />
+                <action android:name="com.second2" />
+                <action android:name="com.second3" />
+                <category android:name="myCategory1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="com.second1" />
+                <category android:name="myCategory1" />
+                <category android:name="myCategory2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".ForthActivity">
+            <intent-filter>
+                <action android:name="com.second1" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="xxx"
+                    android:host="baidu.com"
+                    android:port="88"
+                    android:pathPrefix="/sky"/>
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>
