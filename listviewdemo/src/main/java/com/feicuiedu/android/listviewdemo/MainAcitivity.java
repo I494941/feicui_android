@@ -32,7 +32,11 @@ public class MainAcitivity extends AppCompatActivity {
 
         listView1 = (ListView) findViewById(R.id.listView1);
         list = getData();
+
+        // 绑定适配器
         listView1.setAdapter(baseAdapter);
+
+        // 监听事件
         listView1.setOnItemClickListener(oicl);
     }
 
