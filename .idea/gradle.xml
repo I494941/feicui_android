@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/intentdemo" />
             <option value="$PROJECT_DIR$/listviewdemo" />
             <option value="$PROJECT_DIR$/logindemo" />
+            <option value="$PROJECT_DIR$/sqlitedemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
