@@ -88,6 +88,7 @@ public class DetailActivity extends AppCompatActivity {
 
         Cursor cursor = database.rawQuery(sbSql.toString(), null);
 
+
         List<TableInfo> result = new ArrayList<TableInfo>();
         while (cursor.moveToNext()) {
             Long _id = cursor.getLong(0);
@@ -98,6 +99,9 @@ public class DetailActivity extends AppCompatActivity {
             result.add(tableInfo);
         }
 
+        // database.execSQL("update table1 set number = ? where _id = ?",new String[]{"100","1"});
+
+        // update table1 set number = 100 where _id = 1
         return result;
     }
 }
