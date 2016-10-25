@@ -1,1 +1,1 @@
-include ':app', ':intentdemo', ':listviewdemo', ':logindemo', ':sqlitedemo'
+include ':app', ':intentdemo', ':listviewdemo', ':logindemo', ':sqlitedemo', ':animationdemo'
