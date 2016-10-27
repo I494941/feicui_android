@@ -8,10 +8,25 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.feicuiedu.android.sqlitedemo.MainActivity">
+   tools:context="com.feicuiedu.android.sqlitedemo.MainActivity">
 
+   <TextView
+       android:id="@+id/tv_title"
+       android:text="一站式号码服务"
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:background="#ff00ff"
+       android:gravity="center"
+       android:textSize="40sp"/>
+   <Button
+       android:id="@+id/btn_refresh"
+       android:text="刷新"
+       android:layout_below="@id/tv_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
    <ListView
        android:id="@+id/list_class"
+       android:layout_below="@id/btn_refresh"
        android:layout_width="match_parent"
        android:layout_height="match_parent">
    </ListView>

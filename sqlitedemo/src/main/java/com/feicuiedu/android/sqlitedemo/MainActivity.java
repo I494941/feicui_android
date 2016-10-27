@@ -6,10 +6,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,9 +21,12 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MainActivity";
     private ListView listClass;
 
     private List<ClassInfo> listData = null;
+
+    private Button btnRefresh;
 
     private ViewAdapter va = new ViewAdapter<ClassInfo>() {
 
@@ -31,8 +36,13 @@ public class MainActivity extends AppCompatActivity {
             LayoutInflater lif = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             View view = lif.inflate(R.layout.class_item_layout, null);
+
             TextView tvName = (TextView) view.findViewById(R.id.tv_class_name);
-            tvName.setText(getItem(position).getName());
+
+            ClassInfo classInfo = getItem(position);
+
+            tvName.setText(classInfo.getName());
+
             return view;
         }
     };
@@ -44,29 +54,47 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "你点击的分类的idx是" + listData.get(position).getIdx(), Toast.LENGTH_LONG).show();
 
             Long idx = listData.get(position).getIdx();
-
             Intent intent = new Intent();
-            intent.putExtra("idx",idx);
+            if (idx == -1) {
+                intent.setAction(Intent.ACTION_DIAL);
+            }
+            else {
 
-            intent.setClass(MainActivity.this,DetailActivity.class);
+                intent.putExtra("idx",idx);
+                intent.setClass(MainActivity.this,DetailActivity.class);
+            }
+
             startActivity(intent);
         }
     };
+
+    private View.OnClickListener btnListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(MainActivity.this,"刷新按钮点击了",Toast.LENGTH_SHORT).show();
+            listData.remove(0);
+            va.setListData(listData);
+            //
+            va.notifyDataSetChanged();
+        }
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnRefresh = (Button) findViewById(R.id.btn_refresh);
+        btnRefresh.setOnClickListener(btnListener);
+
         // 获取对象
         listClass = (ListView) findViewById(R.id.list_class);
 
-        // 获取显示数据 ？？？
-        listData = getData();
 
-        // 绑定适配器
-        va.setListData(listData);
 
+        // 控件绑定适配器
         listClass.setAdapter(va);
 
         // 设置监听
@@ -98,4 +126,17 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
 
+    @Override
+    protected void onResume() {
+
+        super.onResume();
+
+        // 获取显示数据
+        Log.d(TAG, "onResume: ");
+        listData = getData();
+        listData.add(0,new ClassInfo(-1l,"本地通话"));
+
+        // 适配器设置数据源
+         va.setListData(listData);
+    }
 }

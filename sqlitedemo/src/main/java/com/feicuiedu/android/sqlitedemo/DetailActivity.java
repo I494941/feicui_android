@@ -26,6 +26,7 @@ public class DetailActivity extends AppCompatActivity {
 
     private ListView listClass;
 
+    private TextView tv_title;
     private List<TableInfo> listData = null;
     private ViewAdapter va = new ViewAdapter<TableInfo>() {
 
@@ -33,6 +34,11 @@ public class DetailActivity extends AppCompatActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
 
             LayoutInflater lif = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            tv_title = (TextView) findViewById(R.id.tv_title);
+
+            // 设置控件隐藏
+            tv_title.setVisibility(View.GONE);
 
             View view = lif.inflate(R.layout.detail_item_layout, null);
             TextView tvName = (TextView) view.findViewById(R.id.tv_detail_name);
@@ -86,7 +92,7 @@ public class DetailActivity extends AppCompatActivity {
         sbSql.append("  from          ");
         sbSql.append("      table"+idx);
 
-        Cursor cursor = database.rawQuery(sbSql.toString(), null);
+            Cursor cursor = database.rawQuery(sbSql.toString(), null);
 
 
         List<TableInfo> result = new ArrayList<TableInfo>();
