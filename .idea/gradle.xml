@@ -11,10 +11,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/animationdemo" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/handlerdemo" />
             <option value="$PROJECT_DIR$/intentdemo" />
             <option value="$PROJECT_DIR$/listviewdemo" />
             <option value="$PROJECT_DIR$/logindemo" />
             <option value="$PROJECT_DIR$/sqlitedemo" />
+            <option value="$PROJECT_DIR$/viewpagerdemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
