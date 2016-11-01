@@ -10,10 +10,26 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.feicuiedu.feicui_android.MainActivity">
 
-    <Button
-        android:text="跳转"
+    <!--<Button
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:onClick="jump"/>
+        android:background="@drawable/btn_bg_selector"
+        android:onClick="myClick"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ff00">
+
+        <EditText
+            android:text="111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_style"/>
+    </LinearLayout>
+
+
+
 </RelativeLayout>

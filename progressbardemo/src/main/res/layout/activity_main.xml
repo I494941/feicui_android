@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ProgressBar
+        android:id="@+id/pb8"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:progress="20"
+        android:progressBackgroundTint="#0000ff"
+        android:secondaryProgress="65"
+        android:secondaryProgressTint="#00ff00"
+        android:secondaryProgressTintMode="add" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pb8"
+        android:gravity="bottom" />
+
+    <Button
+        android:id="@+id/btn_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb8"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb8"
+        android:layout_toRightOf="@id/btn_begin"
+        android:text="重置" />
+
+
+</RelativeLayout>

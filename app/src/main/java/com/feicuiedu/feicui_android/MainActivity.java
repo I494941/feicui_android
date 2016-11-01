@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent,201);
         // intent.setData(Uri.parse("xxx://baidu.com:88/sky1121212"));
         // startActivity(intent);
+    }
+
+    public void myClick(View view) {
+
+        Toast.makeText(this,"我别点了",Toast.LENGTH_SHORT).show();
+        Button b = (Button) view;
+        //b.setBackgroundColor(Color.GREEN);
     }
 
     @Override

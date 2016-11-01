@@ -4,11 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/animationdemo/animationdemo.iml" filepath="$PROJECT_DIR$/animationdemo/animationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogmodule/dialogmodule.iml" filepath="$PROJECT_DIR$/dialogmodule/dialogmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/feicui_android.iml" filepath="$PROJECT_DIR$/feicui_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/handlerdemo/handlerdemo.iml" filepath="$PROJECT_DIR$/handlerdemo/handlerdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/intentdemo/intentdemo.iml" filepath="$PROJECT_DIR$/intentdemo/intentdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/listviewdemo/listviewdemo.iml" filepath="$PROJECT_DIR$/listviewdemo/listviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/logindemo/logindemo.iml" filepath="$PROJECT_DIR$/logindemo/logindemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progressbardemo/progressbardemo.iml" filepath="$PROJECT_DIR$/progressbardemo/progressbardemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" filepath="$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" filepath="$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" />
     </modules>

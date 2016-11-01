@@ -13,11 +13,10 @@
    <TextView
        android:id="@+id/tv_title"
        android:text="一站式号码服务"
-       android:layout_width="match_parent"
-       android:layout_height="100dp"
-       android:background="#ff00ff"
-       android:gravity="center"
-       android:textSize="40sp"/>
+       style="@style/myStyle"
+       />
+
+
    <Button
        android:id="@+id/btn_refresh"
        android:text="刷新"

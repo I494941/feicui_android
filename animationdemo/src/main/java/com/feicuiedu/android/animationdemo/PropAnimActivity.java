@@ -88,7 +88,7 @@ public class PropAnimActivity extends AppCompatActivity {
 
         imageViews = new ImageView[imgIds.length];
 
-        for (int i = 0; i < imageViews.length; i++) {
+        for (int i = 0; i < imageViews.length ; i++) {
             imageViews[i] = (ImageView) findViewById(imgIds[i]);
 
             imageViews[i].setOnClickListener(ocl);

@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         btn_translate.setOnClickListener(ocl);
         btn_set.setOnClickListener(ocl);
         btn_jump.setOnClickListener(ocl);
+
         // 让帧动画运行起来
         AnimationDrawable animationDrawable = (AnimationDrawable) iv_weather.getBackground();
         animationDrawable.start();
