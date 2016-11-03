@@ -1,1 +1,1 @@
-include ':app', ':intentdemo', ':listviewdemo', ':logindemo', ':sqlitedemo', ':animationdemo', ':handlerdemo', ':viewpagerdemo', ':dialogmodule', ':progressbardemo', ':storagedemo'
+include ':app', ':intentdemo', ':listviewdemo', ':logindemo', ':sqlitedemo', ':animationdemo', ':handlerdemo', ':viewpagerdemo', ':dialogmodule', ':progressbardemo', ':storagedemo', ':minidaily'

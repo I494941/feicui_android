@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/intentdemo/intentdemo.iml" filepath="$PROJECT_DIR$/intentdemo/intentdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/listviewdemo/listviewdemo.iml" filepath="$PROJECT_DIR$/listviewdemo/listviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/logindemo/logindemo.iml" filepath="$PROJECT_DIR$/logindemo/logindemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/minidaily/minidaily.iml" filepath="$PROJECT_DIR$/minidaily/minidaily.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressbardemo/progressbardemo.iml" filepath="$PROJECT_DIR$/progressbardemo/progressbardemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" filepath="$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/storagedemo/storagedemo.iml" filepath="$PROJECT_DIR$/storagedemo/storagedemo.iml" />
