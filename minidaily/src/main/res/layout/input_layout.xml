@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_daily_name"
+        android:text="日报名称"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_daily_time"
+        android:text="创建时间:2016-11-03 14:57:32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/et_daily_content"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:hint="请填写日报内容"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:text="新增"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_return"
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
