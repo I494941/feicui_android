@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         lif = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         list = getData();
         lv1.setAdapter(ba);
+
     }
 
     private List<String> getData() {
