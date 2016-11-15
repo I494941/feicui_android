@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/animationdemo" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appinfo" />
             <option value="$PROJECT_DIR$/broadcastreceiverdemo" />
             <option value="$PROJECT_DIR$/checkboxdemo" />
             <option value="$PROJECT_DIR$/dialogmodule" />
@@ -20,7 +21,9 @@
             <option value="$PROJECT_DIR$/listviewdemo" />
             <option value="$PROJECT_DIR$/listviewdemo1" />
             <option value="$PROJECT_DIR$/logindemo" />
+            <option value="$PROJECT_DIR$/lrucachedemo" />
             <option value="$PROJECT_DIR$/minidaily" />
+            <option value="$PROJECT_DIR$/notificationdemo" />
             <option value="$PROJECT_DIR$/progressbardemo" />
             <option value="$PROJECT_DIR$/sqlitedemo" />
             <option value="$PROJECT_DIR$/storagedemo" />
