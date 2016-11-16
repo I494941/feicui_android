@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/appinfo/appinfo.iml" filepath="$PROJECT_DIR$/appinfo/appinfo.iml" />
       <module fileurl="file://$PROJECT_DIR$/broadcastreceiverdemo/broadcastreceiverdemo.iml" filepath="$PROJECT_DIR$/broadcastreceiverdemo/broadcastreceiverdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/checkboxdemo/checkboxdemo.iml" filepath="$PROJECT_DIR$/checkboxdemo/checkboxdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circledemo/circledemo.iml" filepath="$PROJECT_DIR$/circledemo/circledemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogmodule/dialogmodule.iml" filepath="$PROJECT_DIR$/dialogmodule/dialogmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/expressage/expressage.iml" filepath="$PROJECT_DIR$/expressage/expressage.iml" />
       <module fileurl="file://$PROJECT_DIR$/feicui_android.iml" filepath="$PROJECT_DIR$/feicui_android.iml" />
