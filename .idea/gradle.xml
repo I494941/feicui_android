@@ -33,6 +33,7 @@
             <option value="$PROJECT_DIR$/storagedemo" />
             <option value="$PROJECT_DIR$/test" />
             <option value="$PROJECT_DIR$/viewpagerdemo" />
+            <option value="$PROJECT_DIR$/weatherapp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
