@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 饼形图手机空间颜色 -->
+    <color name="piechar_phone">#FF000099</color>
+    <!-- 饼形图SD 空间颜色 -->
+    <color name="piechar_sdcard">#FF00AA00</color>
+    <!-- 饼形图底色 -->
+    <color name="piechar_base">#FFFF8C00</color>
+</resources>

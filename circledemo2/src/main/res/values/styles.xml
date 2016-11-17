@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 饼形图 -->
+    <style name="soft_piechar">
+        <item name="android:layout_width">@dimen/softmgr_piechar_width</item>
+        <item name="android:layout_height">@dimen/softmgr_piechar_height</item>
+    </style>
+    <!-- 饼形图 icon -->
+    <style name="soft_piechar_icon">
+        <item name="android:layout_width">@dimen/softmgr_piechar_icon_width</item>
+        <item name="android:layout_height">@dimen/softmgr_piechar_icon_width
+        </item>
+    </style>
+
+</resources>
