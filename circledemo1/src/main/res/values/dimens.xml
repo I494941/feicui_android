@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--<dimen name="home_cleararc_width_img">100dp</dimen>
+    <dimen name="home_cleararc_height_img">100dp</dimen>
+    <dimen name="home_cleararc_text_bottom" >1dp</dimen>
+    <dimen name="home_cleararc_text_textsize">1dp</dimen>
+    <dimen name="home_cleararc_score_top">20dp</dimen>
+    <dimen name="home_cleararc_score_textsize">35sp</dimen>-->
+
+    <dimen name="home_cleararc_width_img">210dp</dimen>
+    <dimen name="home_cleararc_height_img">210dp</dimen>
+    <dimen name="home_cleararc_text_bottom">40dp</dimen>
+    <dimen name="home_cleararc_text_textsize">16sp</dimen>
+    <dimen name="home_cleararc_score_top">48dp</dimen>
+    <dimen name="home_cleararc_score_textsize">64sp</dimen>
+
+    <dimen name="home_cleararc_width">216dp</dimen>
+    <dimen name="home_cleararc_height">216dp</dimen>
+</resources>
