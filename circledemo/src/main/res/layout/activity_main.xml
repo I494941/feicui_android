@@ -19,6 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="手动+1" />
+
+
     </LinearLayout>
 
     <com.feicuiedu.android.circledemo.MyCircle
@@ -33,6 +35,8 @@
         android_custom:textIsDisplayable="false"    
         android_custom:roundWidth="10dp"
         android_custom:textSize="18sp"
-         ></com.feicuiedu.android.circledemo.MyCircle>
+         >
+
+    </com.feicuiedu.android.circledemo.MyCircle>
 
 </LinearLayout>
