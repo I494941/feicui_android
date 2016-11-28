@@ -11,9 +11,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -38,6 +37,7 @@ public class MyAsyncTask extends AsyncTask<String,Void,String> {
 
     private Context context;
 
+    private Map<String,Object> resutlMap = new HashMap<>();
     private List<Map<String,String>> result = new ArrayList<>();
     private ListView lvData;
     private ListAdapter lvAdapter = new BaseAdapter() {
@@ -137,10 +137,30 @@ public class MyAsyncTask extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String s) {
 
+
         Log.d(TAG, "onPostExecute() called with: s = [" + s + "]");
 
 
-        try {
+        /*{"message":"ok",
+                "nu":"304312442473",
+                "ischeck":"0",
+                "condition":"00",
+                "com":"shunfeng",
+                "status":"200",
+                "state":"0",
+                "data":[
+                    {"time":"2016-11-28 13:04:04","ftime":"2016-11-28 13:04:04","context":"快件到达 【济南历城集散中心】"},
+                    {"time":"2016-11-28 12:25:08","ftime":"2016-11-28 12:25:08","context":"快件在【济南历下华强营业部】已装车，准备发往 【济南历城集散中心】"},
+                    {"time":"2016-11-28 12:22:47","ftime":"2016-11-28 12:22:47","context":"顺丰速运 已收取快件"}
+                    ]
+        }*/
+
+        // 使用google的Gson解析json字符串
+        Gson gson = new Gson();
+        resutlMap = gson.fromJson(s,new TypeToken<Map<String,Object>>(){}.getType());
+
+        result = (List<Map<String, String>>) resutlMap.get("data");
+        /*try {
             JSONObject jsonObject = new JSONObject(s);
             JSONArray array= jsonObject.getJSONArray("data");
             for (int i = 0; i < array.length(); i++) {
@@ -159,7 +179,7 @@ public class MyAsyncTask extends AsyncTask<String,Void,String> {
             }
         } catch (JSONException e) {
             e.printStackTrace();
-        }
+        }*/
 
         lvData.setAdapter(lvAdapter);
         //super.onPostExecute(s);
